@@ -14,6 +14,12 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+
+      .pdf-container {
+        margin-bottom: 30px;
       }
     </style>
   </head>
@@ -21,20 +27,24 @@
     <h1>PDF Store</h1>
 
     <div class="pdf-container">
-      <h2>PDF 1</h2>
+      <h2>Bitget PDF</h2>
 
-      <!-- Opens PDF in a new tab (best for viewing) -->
+      <!-- View PDF in new tab -->
       <button
-        onclick="window.open('/pdf/pdfs/bitget pdf.pdf', '_blank')"
+        onclick="window.open('pdfs/bitget%20pdf.pdf', '_blank')"
         class="btn"
       >
         View PDF
       </button>
 
-      <!-- Forces download -->
-      <a href="/pdfs/file XXX BANGER (1).pdf" download class="btn"
-        >Download PDF</a
+      <!-- Download PDF -->
+      <a
+        href="pdfs/bitget%20pdf.pdf"
+        download
+        class="btn"
       >
+        Download PDF
+      </a>
     </div>
   </body>
 </html>
